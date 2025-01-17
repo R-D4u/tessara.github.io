@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Доставляем любые оптовые объемы продуктов питания</title>
+		<title>Math puzzle with numbers. Intelligent rebuses for all ages.</title>
 
 		<link rel="icon" type="image/png" href="assets/favicon/favicon.png" />
 
@@ -30,16 +30,16 @@
 					<div class="header-box">
 						<ul class="nav t20 mr">
 							<li>
-								<a href="index.html/#main">Home</a>
+								<a href="index.html#main">Home</a>
 							</li>
 							<li>
-								<a href="index.html/#features">Features</a>
+								<a href="index.html#features">Features</a>
 							</li>
 							<li>
-								<a href="index.html/#advantages">Advantages</a>
+								<a href="index.html#advantages">Advantages</a>
 							</li>
 							<li>
-								<a href="index.html/#screenshots">Screenshots</a>
+								<a href="index.html#screenshots">Screenshots</a>
 							</li>
 						</ul>
 						<div class="soc">
@@ -145,11 +145,37 @@
 						used by the Application:
 					</p>
 					<ul>
-						<li>Google Play Services</li>
-						<li>Google Analytics for Firebase</li>
-						<li>Firebase Crashlytics</li>
-						<li>Yandex.Metrica</li>
-						<li>Unity</li>
+						<li>
+							<a href="https://www.google.com/policies/privacy/" rel="nofollow"
+								>Google Play Services</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://firebase.google.com/support/privacy"
+								rel="nofollow"
+								>Google Analytics for Firebase</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://firebase.google.com/support/privacy/"
+								rel="nofollow"
+								>Firebase Crashlytics</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://yandex.ru/legal/metrica_termsofuse/?lang=en"
+								rel="nofollow"
+								>Yandex.Metrica</a
+							>
+						</li>
+						<li>
+							<a href="https://unity3d.com/legal/privacy-policy" rel="nofollow"
+								>Unity</a
+							>
+						</li>
 					</ul>
 					<p>
 						The Service Provider may disclose User Provided and Automatically
@@ -301,23 +327,5 @@
 				>
 			</div>
 		</div>
-
-		<!-- scripts -->
-		<script>
-			document.querySelectorAll('.nav a').forEach(anchor => {
-				anchor.addEventListener('click', function (e) {
-					e.preventDefault()
-					const targetId = this.getAttribute('href').substring(1) // Убираем #
-					const targetElement = document.getElementById(targetId)
-
-					if (targetElement) {
-						targetElement.scrollIntoView({
-							behavior: 'smooth',
-							block: 'start',
-						})
-					}
-				})
-			})
-		</script>
 	</body>
 </html>

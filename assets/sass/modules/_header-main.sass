@@ -1,0 +1,292 @@
+.header
+	padding-top: 1rem
+	padding-bottom: 1rem
+	position: relative
+	z-index: 34
+	&-box
+		display: flex
+		align-items: center
+		justify-content: center
+	&-cont
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+	&-right
+		display: flex
+		align-items: center
+
+
+.soc
+	display: flex
+	&-item
+		width: 1.9rem
+		flex-shrink: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: all 0.3s
+		margin: 0 0.5rem
+		&:hover
+			opacity: 0.5
+		img
+			width: 100%
+// filter: brightness(0) invert(1)
+.logo
+	display: flex
+	align-items: center
+	&__img
+		width: 9rem
+		position: relative
+		margin-right: 1rem
+
+.nav
+	display: flex
+	align-items: center
+	li
+		a
+			display: inline-block
+			color: #8B8B98
+			transition: all 0.4s
+			margin: 0 .7rem
+			position: relative
+			&:hover, &.active
+				color: #FFFFFF
+				opacity: 1
+
+.main
+	position: relative
+	z-index: 128
+	padding-bottom: 2rem
+	&-px-1
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 71%
+		display: flex
+
+		img
+			width: 100%
+	&-info
+		width: 73%
+		z-index: 5
+	&-row
+		display: flex
+		align-items: center
+		position: relative
+	&-cont
+		padding-top: 9rem
+		padding-bottom: 13rem
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-img
+		position: absolute
+		right: 19rem
+		top: 2rem
+		width: 27%
+		display: flex
+		justify-content: flex-end
+		align-items: center
+
+
+.not-anim
+	opacity: 1
+.header
+	transition: all 0.2s ease-in
+.header.active
+	position: fixed
+	width: 100%
+	padding-top: 1rem
+	padding-bottom: 1rem
+	left: 0
+	top: 0
+	background-color: #fff
+	z-index: 444
+	animation-delay: 0ms
+	animation-duration: 1100ms
+	animation-fill-mode: both
+	animation-name: topHeader
+	&.header-light
+		background-color: #fff
+		border-bottom: 1px solid rgba(#16233c,0.7)
+	.light
+		color: #282828
+@keyframes topHeader
+	0%
+		transform: translateY(-110%)
+		opacity: 0
+	100%
+		transform: translateX(0)
+		opacity: 1
+
+.nav-mobile
+	position: fixed
+	left: 0
+	top: 0
+	height: 100%
+	width: 28rem
+	background: #131836
+	z-index: 855
+	padding: 1.5rem
+	transition: transform 0.5s ease
+	overflow: hidden
+	transform: translateX(-110%)
+	&.active
+		transform: translateX(0)
+	&__head
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.nav
+		margin-bottom: 1rem
+		margin-top: 1.5rem
+		flex-direction: column
+		align-items: center
+		a
+			margin-bottom: 1rem
+			font-size: 1rem
+	&__footer
+		display: flex
+		justify-content: center
+.close-wrap
+	position: relative
+	width: 1.5rem
+	height: 1.5rem
+	.close
+		transform: none
+
+
+
+.burger, .top-arr
+	width: 100%
+	height: 5rem
+	padding: 1.3rem
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	border: 2px solid rgba(#ECECEC26, 0.15)
+	transition: all 0.4s
+	&:hover
+		border: 2px solid #fc874c
+		background: #fc874c
+	img
+		width: 100%
+
+.t-min, .title-lg, .title-sm, .title-md, .title, .t32, .t22, .main-row, .main-text-rotate, .t24, .t30, .t20
+	// opacity: 0
+.not-anim
+	opacity: 1
+.burger-head
+	display: none
+	width: 0
+
+
+
+
+.how
+	position: relative
+	padding-top: 4rem
+	padding-bottom: 4rem
+	background: #22212D
+	.main-cont
+		justify-content: flex-end
+		padding-bottom: 8rem
+	.main-info
+		width: 50%
+	.main-img
+		right: auto
+		left: 19rem
+		top: 0rem
+		width: 24%
+	.main-px-1
+		right: auto
+		left: 0
+		width: 25%
+
+.why
+	position: relative
+	padding-top: 6rem
+	padding-bottom: 6rem
+	&-cont
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		text-align: center
+		gap: 2rem
+	&-item
+		width: calc(33% - 2rem)
+		&__img
+			height: 3rem
+			img
+				height: 100%
+
+.brain
+	padding-top: 5rem
+	padding-bottom: 5rem
+	position: relative
+	background: #22212d
+	&-cont
+		display: flex
+		gap: 2rem
+		padding: 0 2rem
+	&-item
+		border-radius: 14px
+		overflow: hidden
+		img
+			width: 100%
+
+
+.download
+	position: relative
+	padding-top: 5rem
+	padding-bottom: 5rem
+	.main-row
+		flex-direction: column
+		align-items: center
+	.main-px-1
+		width: 23%
+		top: 3rem
+
+
+.privacy-policy
+	padding: 2rem
+	color: #fff
+	line-height: 1.4
+
+	h1, h2
+		margin-bottom: 1.5rem
+		color: #fff
+
+	h1
+		font-size: 2rem
+		font-weight: bold
+		border-bottom: 2px solid #ddd
+		padding-bottom: 0.5rem
+
+	h2
+		font-size: 1.5rem
+		font-weight: bold
+		margin-top: 2rem
+
+	p
+		margin-bottom: 1rem
+
+	ul
+		margin: 1rem 0
+		padding-left: 1.5rem
+		list-style-type: disc
+
+		li
+			margin-bottom: 0.5rem
+
+	a
+		color: #ff9b23
+		text-decoration: none
+		transition: all 0.4s
+		&:hover
+			text-decoration: underline
+			color: #0056b3
+.footer
+	padding-bottom: 1rem

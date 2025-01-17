@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Lack';
+    src: url('Lack-Regular.woff2') format('woff2'),
+        url('Lack-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src: url('TildaSans-Regular.woff2') format('woff2'),
+        url('TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src: url('TildaSans-Bold.woff2') format('woff2'),
+        url('TildaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
